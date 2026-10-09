@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #FAF6F0;
+    color: #2A2727;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbar for an elegant feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #871D2F;
+}
+
+/* Shimmer and gold gradients */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #B2883F 0%, #E6D7A4 50%, #B2883F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-border {
+  border-image: linear-gradient(135deg, #B2883F, #FAF7EE, #B2883F) 1;
+}
+
+.rose-gradient {
+  background: linear-gradient(135deg, #9E2A2B 0%, #871D2F 50%, #5C0F1E 100%);
+}
+
+.bg-pattern {
+  background-color: #FAF6F0;
+  background-image: radial-gradient(#C5A059 0.5px, transparent 0.5px), radial-gradient(#C5A059 0.5px, #FAF6F0 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  background-opacity: 0.05;
+}
